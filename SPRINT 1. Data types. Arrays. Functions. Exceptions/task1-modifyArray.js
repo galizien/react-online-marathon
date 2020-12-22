@@ -4,7 +4,6 @@
 //     modifyArray([12, 6, 22, 0, -8])); // [‘Start’, 6, 22, 0, ‘End’]
 
 function modifyArray(array) {
-    // let myArray = [12, 6, 22, 0, -8];
     array.shift();
     array.pop();
     array.unshift("Start");
@@ -13,3 +12,4 @@ function modifyArray(array) {
 }
 
 modifyArray([12, 6, 22, 0, -8]);
+modifyArray(123)

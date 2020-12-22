@@ -26,4 +26,4 @@ function checkAdult(age) {
     }
 }
 
-checkAdult();
+checkAdult(2);
