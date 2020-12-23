@@ -12,4 +12,4 @@ function modifyArray(array) {
 }
 
 modifyArray([12, 6, 22, 0, -8]);
-modifyArray(123)
+// modifyArray(123)

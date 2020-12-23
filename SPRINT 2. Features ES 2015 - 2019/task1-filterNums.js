@@ -1,10 +1,12 @@
-const filterNums = (nums, pointer, direction) => {
+const filterNums = (nums, pointer = 0, direction = "greater") => {
+    let result = 0;
     if (direction === "less") {
-
+        result = nums.filter(num => num < pointer);
     }
-    let result = nums.filter(num => num > pointer);
-    console.log(result);
+    else if (direction === "greater") {
+        result = nums.filter(num => num > pointer);
+    }
     return result;
 };
-filterNums([-1, 2, 4, 0, 55, -12, 3], 1, "less");
 
+filterNums([-1, 2, 4, 0, 55, -12, 3], "less");
