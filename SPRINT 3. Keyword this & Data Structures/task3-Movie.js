@@ -6,13 +6,14 @@ class Movie {
     }
 
     watchMovie() {
-        return "I watch the movie " + this.name + this.category + this.startShow;
+        return "I watch the movie " + this.name + ", which is " + this.category + " and the " + this.startShow + " release";
     }
 
 }
 
-let movie1 = new Movie("Titanic, ", "which is drama ", "and the 1999 realise");
-let movie2 = new Movie("Troya, ", "which is historical ", "and the 2004 realise")
+let movie1 = new Movie("Titanic", "drama", 1999);
+let movie2 = new Movie("Troya", "historical", 2004)
 
 console.log(movie1.watchMovie());
 console.log(movie2.watchMovie());
+console.log(movie1, movie2);
