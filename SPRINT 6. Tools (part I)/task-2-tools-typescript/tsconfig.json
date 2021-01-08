@@ -4,12 +4,13 @@
     "outFile": "dist/main.js",
   },
   "include": [
-    "/file1.ts",
-    "/file2.ts",
-    "*.ts",
     "src/**/*"
   ],
   "exclude": [
     "**/*.test.ts"
   ],
+  "files": [
+    "file1.ts",
+    "file2.ts"
+  ]
 }

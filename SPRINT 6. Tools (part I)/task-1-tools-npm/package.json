@@ -4,7 +4,7 @@
   "author": "IT Academy",
   "scripts": {
     "task1": "node script1.js",
-    "task2": "node script2.js"
+    "task2 ": "node script2.js"
   },
   "devDependencies": {
     "typescript": "^4.1.3"
