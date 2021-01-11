@@ -15,6 +15,6 @@ async function concatFileCSS(cb) {  //2 варіант з колбеком і б
     cb();
 }
 
-const grouped = gulp.parallel(concatFileJS, concatFileCSS);
+const grouped = gulp.series(concatFileJS, concatFileCSS);
 
 exports.default = grouped;
