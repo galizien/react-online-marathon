@@ -6,6 +6,6 @@ export default function Button() {
         backgroundColor: 'transparent',
         border: '0px',
         fontFamily: 'Courier',
-        frontSize: '33pt',
+        fontSize: '50pt',
     }} data-testid="element-button"> Wake up Neo...</button >;
 }

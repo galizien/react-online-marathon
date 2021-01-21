@@ -2,26 +2,28 @@ import React from 'react';
 import './App.css';
 import First from "./First"
 
-const list = [
-  "Animals",
-  "Anime",
-  "Anti-Malware",
-  "Art Design",
-  "Books",
-  "Business",
-  "Calendar",
-  "Cloud Storage",
-  "File Sharing",
-  "Animals",
-  "Continuous Integration",
-  "Cryptocurrency"
-].map(element => element.toLowerCase());
-
-
 export default function App() {
+  const list = [
+    "Animals",
+    "Anime",
+    "Anti-Malware",
+    "Art Design",
+    "Books",
+    "Business",
+    "Calendar",
+    "Cloud Storage",
+    "File Sharing",
+    "Animals",
+    "Continuous Integration",
+    "Cryptocurrency"
+  ];
+
+
+
   return (
     <div>
-      <First list={list} />
+      <First list={list.map(element => element.toLowerCase())} />
     </div>
   );
 }
+

@@ -8,15 +8,15 @@ export default class App extends React.Component {
   }
 
   handleClick = () => {
-    this.setState(state => ({
-      appData: this.state.appData.toLowerCase()
-    }))
-  }
+    this.setState(prev => {
+      return {
+        appData: this.prev.appData.toLowerCase()
+      };
+    });
+  };
 
 
   render() {
-    return (
-      <div onClick={this.handleClick}>{this.state.appData} </div>
-    )
+    return <div onClick={this.handleClick}>{this.state.appData} </div>
   }
 }
