@@ -1,0 +1,16 @@
+.header-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header-component a {
+    font-size: 18px;
+    font-weight: bold;
+    margin:18px;
+    color: rgb(53, 49, 63);
+    text-decoration: none;
+}
+

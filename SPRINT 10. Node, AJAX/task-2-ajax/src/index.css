@@ -1,0 +1,10 @@
+.people {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #button{
+    display: block;
+    width: 100%;
+  }
+  

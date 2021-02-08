@@ -9,16 +9,26 @@ export default class PersonList extends React.Component {
         count: 1
     }
 
-    increment = () => {
-        this.setState({ count: this.state.count + 1 })
-    }
-
-    componentDidMount() {
-        axios.get(`https://swapi.dev/api/people/${this.state.count}`)
+    load() {
+        axios.get(`https://swapi.dev/api/people/${this.state.count}/`)
             .then(res => {
                 const persons = res.data;
                 this.setState({ persons });
             });
+
+    }
+
+    componentDidMount() {
+        this.load();
+    }
+
+    componentDidUpdate() {
+        this.load();
+    }
+
+    increment = () => {
+        const count = this.state.count + 1;
+        this.setState({ count });
     }
 
     render() {
@@ -26,7 +36,9 @@ export default class PersonList extends React.Component {
             <div>
                 <h1>{this.state.persons.name}</h1>
                 <h3>{this.state.persons.birth_year}</h3>
-                <button onClick={this.increment}> Next</button>
+                <img src={`https://starwars-visualguide.com/assets/img/characters/${this.state.count}.jpg`}></img>
+                <button type="button" onClick={this.increment} id="button"> Next</button>
+
             </div >
         )
     }
